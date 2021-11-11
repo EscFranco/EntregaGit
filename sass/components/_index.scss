@@ -1,0 +1,164 @@
+/* INDEX PAGINA */ 
+
+/*INFORMACION*/
+
+section {
+    text-align: center;
+    border: solid black 1px;
+}
+
+.informacion {
+    &__titulo {
+        color:chocolate;
+        margin: 20px;
+        font-size: 25px;
+    }
+
+    &__texto--fuente {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 15px;
+    }
+
+    &__texto--margen {
+        margin-top: 2%;
+    }
+
+    &__boton {
+        background-color: red;
+        color:white;
+        font-size: 20px;
+        cursor:pointer;
+        margin: 1%;
+        border: red;
+
+        &__link {
+            text-decoration: none;
+            text-transform: uppercase;
+            color:white;
+        }
+    }
+
+    &__boton:hover {
+        background-color: gray;
+    }
+}
+
+/* PEDIDOS A CAMBIAR POR BEM */
+
+.sectionPedido {
+    color:chocolate;
+    margin: 20px;
+    font-size: 30px;
+}
+
+h4 {
+    font-style: italic;
+}
+
+.sectionMenu {
+    margin: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cartaDeComida {
+    border: solid black 1px;
+    margin: 10px 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+}
+
+.barraMenu { 
+    grid-area: 1 / 1 / 2 / 7;
+}
+
+.gridComida {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding-left: 0%;
+}
+
+.barraComida {
+    display: inline-block;
+    padding: 3%;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.comida { 
+    grid-area: 2 / 1 / 5 / 7; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    font-size: 10px;
+}
+
+.producto1 { grid-area: 1 / 1 / 2 / 2; }
+.producto2 { grid-area: 1 / 2 / 2 / 3; }
+.producto3 { grid-area: 1 / 3 / 2 / 4; }
+.producto4 { grid-area: 1 / 4 / 2 / 5; }
+.producto5 { grid-area: 2 / 1 / 3 / 2; }
+.producto6 { grid-area: 2 / 2 / 3 / 3; }
+.producto7 { grid-area: 2 / 3 / 3 / 4; }
+.producto8 { grid-area: 2 / 4 / 3 / 5; }
+.producto9 { grid-area: 3 / 1 / 4 / 2; }
+.producto10 { grid-area: 3 / 2 / 4 / 3; }
+.producto11 { grid-area: 3 / 3 / 4 / 4; }
+.producto12 { grid-area: 3 / 4 / 4 / 5; }
+
+.pedir {
+    grid-area: 5 / 3 / 6 / 5;
+    border: none;
+}
+
+/* OPINIONES */ 
+
+.opiniones {
+    &__titulo {
+        color:chocolate;
+        margin: 20px;
+        font-size: 30px;
+    }
+    &__comentarios {
+        font-family: 'Fira Sans', sans-serif;
+        color:black;
+        margin:0 auto 30px;
+    }
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width:1024px) {
+    .cartaDeComida {
+        width: 60%;
+        margin: 0 auto 50px;
+        }
+    
+    .barraComida {
+        font-size: 20px;
+        text-transform: none;
+        font-weight: 600;
+        padding: 3%;
+    }
+
+    .gridComida {
+        display:inline-block;
+        width: 100%;
+    }
+
+    .comida {
+        font-size: 15px;
+    }
+}
+
+/* INDEX FIN */ 
+

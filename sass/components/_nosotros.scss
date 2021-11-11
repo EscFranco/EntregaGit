@@ -1,0 +1,57 @@
+/*NOSOTROS PAGINA*/
+
+.Nosotros {
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 5;
+    grid-template-areas: "img h3" "img h2" "img p1" "img p2" "img p3";
+}
+
+.nosotrosH3 {
+    font-style: italic;
+    color:red;
+    font-size: 20px;
+    grid-area: h3;
+}
+
+.nosotrosH2 {
+    margin-top: 2px;
+    font-weight: 600;
+    font-size: 45px;
+    font-family: monospace;
+    grid-area: h2;
+}
+
+.nosotrosIMG {
+    grid-area: img;
+}
+
+.nosotrosP {
+    margin-top: 5px;
+    font-size: 15x;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 2%;
+}
+
+.p1 {
+    grid-area: p1;
+}
+.p2 {
+    grid-area: p2;
+}
+.p3 {grid-area: p3;
+}
+
+/*FIN NOSOTROS*/
+
+@media only screen and (max-width:1024px) {
+    .Nosotros {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}

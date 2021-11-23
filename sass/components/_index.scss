@@ -133,7 +133,19 @@ h4 {
         color:black;
         margin:0 auto 30px;
     }
+    &__slide {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        font-style: italic;
+    }
 }
+
+.opiniones__slide__texto1 { grid-area: 1 / 1 / 2 / 2; }
+.opiniones__slide__texto2 { grid-area: 1 / 2 / 2 / 3; }
+.opiniones__slide__texto3 { grid-area: 1 / 3 / 2 / 4; }
 
 /* MEDIA QUERY */
 

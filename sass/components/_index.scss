@@ -7,6 +7,16 @@ section {
     border: solid black 1px;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    height: calc(100vh - 100px);
+}
+
+.carouselHeight {
+    height: calc(100vh - 100px);
+    object-fit: cover;
+}
+
 .informacion {
     &__titulo {
         color:chocolate;
@@ -175,6 +185,15 @@ h4 {
 @media only screen and (max-width:425px) {
     .opiniones__slide {
         display: inline-block;
+    }
+
+    .carouselHeight {
+        height: 300px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        height: 300px;
     }
 }
 

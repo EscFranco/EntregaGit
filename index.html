@@ -79,37 +79,104 @@
             <h3 class="sectionPedido">Hace tu pedido</h3>
             <h4>Nuestras Especialidades</h4>
             <h3 class="sectionMenu">Menu GODINSTA</h3>
-            <div class="cartaDeComida">
-                <div class="barraMenu">
-                    <ul class="gridComida">
-                        <li class="barraComida">Entradas</li>
-                        <li class="barraComida">Milanesas</li>
-                        <li class="barraComida">Hamburguesas</li>
-                        <li class="barraComida">Pizzas</li>
-                        <li class="barraComida">Empanadas</li>
-                        <li class="barraComida">Bebidas</li>
-                    </ul>
+            <div class="cartaMenu">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-entrada-tab" data-bs-toggle="tab" data-bs-target="#nav-entrada" type="button" role="tab" aria-controls="nav-entrada" aria-selected="true">Entradas</button>
+                        <button class="nav-link" id="nav-milanesa-tab" data-bs-toggle="tab" data-bs-target="#nav-milanesa" type="button" role="tab" aria-controls="nav-milanesa" aria-selected="false">Milanesas</button>
+                        <button class="nav-link" id="nav-hamburguesa-tab" data-bs-toggle="tab" data-bs-target="#nav-hamburguesa" type="button" role="tab" aria-controls="nav-hamburguesa" aria-selected="false">Hamburguesas</button>
+                        <button class="nav-link" id="nav-pizzas-tab" data-bs-toggle="tab" data-bs-target="#nav-pizzas" type="button" role="tab" aria-controls="nav-pizzas" aria-selected="false">Pizzas</button>
+                        <button class="nav-link" id="nav-empanadas-tab" data-bs-toggle="tab" data-bs-target="#nav-empanadas" type="button" role="tab" aria-controls="nav-empanadas" aria-selected="false">Empanadas</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-entrada" role="tabpanel" aria-labelledby="nav-entrada-tab">
+                        <div class="comida">
+                            <div class="producto1"> Bastoncitos de Muzzarella </div>
+                            <div class="producto2"> Papas Fritas con Cheddar </div>
+                            <div class="producto3"> Cheese Doble </div>
+                            <div class="producto4"> Fritas con Cheddar y Bacon </div>
+                            <div class="producto5"> Empanada Frita de Carne </div>
+                            <div class="producto6"> Empanada Frita de J y Q </div>
+                            <div class="producto7"> Picada para 2 </div>
+                            <div class="producto8"> Pizza Jamon y Huevo </div>
+                            <div class="producto9"> Picada para 2 </div>
+                            <div class="producto10"> Picada para 4 </div>
+                            <div class="producto11"> Ensalada Cesar </div>
+                            <div class="producto12"> Ensalada Mixta </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-milanesa" role="tabpanel" aria-labelledby="nav-milanesa-tab">
+                        <div class="comida">
+                            <div class="producto1"> Milanesa de Ternera </div>
+                            <div class="producto2"> Suprema Clasica </div>
+                            <div class="producto3"> Milanesa Napolitana </div>
+                            <div class="producto4"> Suprema Napolitana </div>
+                            <div class="producto5"> Milanesa con Cheddar </div>
+                            <div class="producto6"> Suprema con Cheddar </div>
+                            <div class="producto7"> Milanesa Americana </div>
+                            <div class="producto8"> Suprema Americana </div>
+                            <div class="producto9"> Milanesa de la Casa </div>
+                            <div class="producto10"> Suprema de la Casa </div>
+                            <div class="producto11"> Milanesa de Soja </div>
+                            <div class="producto12"> Milanesa Veggie </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-hamburguesa" role="tabpanel" aria-labelledby="nav-hamburguesa-tab">
+                        <div class="comida">
+                            <div class="producto1"> Cheese Simple </div>
+                            <div class="producto2"> Cheese Doble </div>
+                            <div class="producto3"> Bacon Simple </div>
+                            <div class="producto4"> Bacon Doble </div>
+                            <div class="producto5"> Barbacoa Simple </div>
+                            <div class="producto6"> Barbacoa Doble </div>
+                            <div class="producto7"> Classic Simple </div>
+                            <div class="producto8"> Classic Doble </div>
+                            <div class="producto9"> Crispy Simple </div>
+                            <div class="producto10"> Crispy Doble </div>
+                            <div class="producto11"> Veggie </div>
+                            <div class="producto12"> Agregar Medallon </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-pizzas" role="tabpanel" aria-labelledby="nav-pizzas-tab">
+                        <div class="comida">
+                            <div class="producto1"> Muzzarella </div>
+                            <div class="producto2"> Jamon y Huevo </div>
+                            <div class="producto3"> Provolone </div>
+                            <div class="producto4"> Provolone con Jamon </div>
+                            <div class="producto5"> Fugazzeta </div>
+                            <div class="producto6"> Roquefort </div>
+                            <div class="producto7"> Rucula </div>
+                            <div class="producto8"> Napolitana </div>
+                            <div class="producto9"> Palmitos </div>
+                            <div class="producto10"> Jamon y Morrones </div>
+                            <div class="producto11"> Doble Muzzarella </div>
+                            <div class="producto12"> Muzzarella sin TACC </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-empanadas" role="tabpanel" aria-labelledby="nav-empanadas-tab">
+                        <div class="comida">
+                            <div class="producto1"> Carne </div>
+                            <div class="producto2"> Jamón y Queso </div>
+                            <div class="producto3"> Verdura </div>
+                            <div class="producto4"> Pollo </div>
+                            <div class="producto5"> Cortada a Cuchillo </div>
+                            <div class="producto6"> Cuatro Quesos </div>
+                            <div class="producto7"> Calabaza </div>
+                            <div class="producto8"> Provolone con Jamon </div>
+                            <div class="producto9"> Queso y Cebolla </div>
+                            <div class="producto10"> Burger </div>
+                            <div class="producto11"> Vacio y Provoleta </div>
+                            <div class="producto12"> Choclo </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="comida">
-                    <div class="producto1"> Bastoncitos de Muzzarella </div>
-                    <div class="producto2"> Milanesa Napolitana </div>
-                    <div class="producto3"> Cheese Doble </div>
-                    <div class="producto4"> Pizza grande de Muzzarella </div>
-                    <div class="producto5"> Papas Fritas con Cheddar </div>
-                    <div class="producto6"> Suprema Napolitana </div>
-                    <div class="producto7"> Cheese Doble </div>
-                    <div class="producto8"> Pizza Jamon y Huevo </div>
-                    <div class="producto9"> Picada para 2 </div>
-                    <div class="producto10"> Milanesa Rellena </div>
-                    <div class="producto11"> Veggie </div>
-                    <div class="producto12"> Provolone </div>
-                </div>
-                <div class="d-grid gap-2 col-6 mx-auto pedir">
+                <div class="d-grid gap-2 col-6 mx-auto botonPedir">
                     <button class="btn btn-dark" type="button">Pedidos Ya</button>
                     <button class="btn btn-dark" type="button">Nuestro Delivery</button>
                 </div>
             </div>
-        </section>
+    </section>
 
         <section class="opiniones">
             <h3 class="opiniones__titulo">Opiniones de la gente</h3>

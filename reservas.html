@@ -29,44 +29,66 @@
         </div>
     </header>
 
-    <section class="formGrid">
-        <img class="img-fluid reservasIMG" src="comida2.jpg" alt="https://i.ytimg.com/vi/AhkuOxEmeUI/maxresdefault.jpg">
-        <h2 class="reservasH2">Pedi tu Reserva</h2>
-        <p class="reservasP">Elegi que local y donde queres pedir tu Reserva y nosotros nos estaremos contactando con vos en la brevedad para decirte las fechas disponibles</p>
-        <form class="reservasForm">
-            <div class="row mb-3">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3">
+    <section class="pt-7 pt-md-9">
+        <img class="img-fluid reservasIMG" src="https://media.istockphoto.com/photos/milanesa-a-la-napolitana-argentina-breaded-beef-cutlet-picture-id1284598634?k=20&m=1284598634&s=612x612&w=0&h=dFnss53JmVhLhEWctURnhL5zhNdFn68y1JvxICFwFi8=" alt="comida2.jpg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6 text-center">
+                    <h2 class="mb-2">Pedi tu Reserva</h2>
+                    <p class="mb-6">Elegi el local, el horario de tu Reserva y nosotros nos estaremos contactando con vos en la brevedad para decirte las fechas disponibles</p>
                 </div>
             </div>
-            <div class="position-relative row g-3">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Nombre" aria-label="First Name">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last Name">
+            <div class="row justify-content-lg-center">
+                <div class="col-lg-8">
+                    <form id="reservationForm">
+                        <div class="row gx-3">
+                        <div class="col-md-6">
+                            <input type="hidden" name="contact_number">
+                            <div class="mb-3">
+                                <label class="visually-hidden" for="user_name">Nombre Completo</label>
+                                <input class="form-control" id="user_name" name="user_name" type="text" placeholder="Nombre Completo" required="">
+                            </div>
+                            <div class="mb-3">
+                                <label class="visually-hidden" for="user_phone">Numero de Telefono</label>
+                                <input class="form-control" id="user_phone" name="user_phone" type="tel" placeholder="Numero de Telefono" required="">
+                            </div>
+                            <div class="mb-3">
+                                <label class="visually-hidden" for="user_email">Ingrese email</label>
+                                <input class="form-control" id="user_email" name="user_email" type="email" placeholder="Ingrese email" required="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="visually-hidden" for="guests">Personas</label>
+                                <select class="form-select" id="guests" name="guests" required="">
+                                    <option value="1">1 persona</option>
+                                    <option value="2" selected="">2 personas</option>
+                                    <option value="3">3 personas</option>
+                                    <option value="4">4 personas</option>
+                                    <option value="5">5 personas</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="visually-hidden" for="local">Local</label>
+                                <select class="form-select" id="local" name="local" required="">
+                                    <option value="1">Palermo</option>
+                                    <option value="2" selected="">Nuñez</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="visually-hidden" for="time">Horario</label>
+                                <input class="form-control" id="time" name="time" type="time" value="18:00" required="">
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <button class="btn btn-dark botonReserva" type="submit">Haz tu Reserva</button>
+                        </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <fieldset class="row mb-3">
-                <legend class="col-form-label col-sm-2 pt-0">Local</legend>
-                <div class="col-sm-10">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                        <label class="form-check-label" for="gridRadios1">
-                            Palermo
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                        <label class="form-check-label" for="gridRadios2">
-                            Nuñez
-                        </label>
-                    </div>
-                </div>
-            </fieldset>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+        </div>
+    </section>
 
     </section>
     

@@ -1,14 +1,23 @@
 /* RESERVAS PAGINA */
-.reservasH2 {
-    margin-top: 20px;
+
+.reservasIMG {
+    margin-top: 1%;
 }
 
-.reservasForm {
-    width: 80%;
+.botonReserva {
+    font-family: sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    margin-bottom: 2%;
 }
 
-.form-check {
-    text-align: left;
+@media only screen and (max-width:425px) {
+    .reservasIMG {
+        margin-top: 0%;
+    }
 }
+
 /*FIN RESERVAS*/
 

@@ -417,7 +417,9 @@ h4 {
   margin-bottom: 2%; }
 
 .formTitle {
-  color: chocolate; }
+  color: chocolate;
+  padding-top: 10px;
+  font-size: 27px; }
 
 @media only screen and (max-width: 425px) {
   .reservasIMG {
